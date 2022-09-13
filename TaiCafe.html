@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <title>Tai Café</title>
+  <style>
+    .border0 {
+      border: 0px;
+    }
+
+    .border-radius0 {
+      border-radius: 0rem;
+    }
+
+    .bg-gray {
+      background-color: var(--bs-gray-200) !important;
+    }
+
+    .vh {
+      height: 50vh !important;
+    }
+
+    .fs-7 {
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 576px) {
+      .fs-sm-7 {
+        font-size: calc(0.9rem + 0.2vw) !important;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .px-6 {
+        padding-right: 4.5rem !important;
+        padding-left: 4.5rem !important;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .vh-lg {
+        height: 75vh !important;
+      }
+
+      .px-6 {
+        padding-right: 6rem !important;
+        padding-left: 6rem !important;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .px-6 {
+        padding-right: 7.5rem !important;
+        padding-left: 7.5rem !important;
+      }
+    }
+
+    .footer-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 導覽列 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">泰山咖啡莊園</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#burger">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="burger">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">菜單餐點</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">周邊景點</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">莊園位置</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">聯絡我們</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">咖啡故事</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 輪播圖 -->
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/carousel01.png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/carousel02.png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/carousel03.png" class="d-block w-100">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- 網格卡片 -->
+  <div class="row row-cols-1 row-cols-lg-3 m-5">
+    <div class="col">
+      <div class="card">
+        <img src="./images/card01.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./images/card02.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./images/card03.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 卡片 -->
+  <div class="card bg-gray text-center border0 border-radius0">
+    <div class="row g-0">
+      <div class="col-lg-6">
+        <img src="./images/info01.png" class="img-fluid" style="max-width: 100%;">
+      </div>
+      <div class="col-lg-6 d-flex align-items-center">
+        <div class="card-body">
+          <h5 class="card-title fs-1">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content.
+            This content is a little bit longer.</p>
+          <a href="#" class="btn btn-success">VIEW STORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card bg-gray text-center border0 border-radius0">
+    <div class="row g-0 flex-lg-row-reverse">
+      <div class="col-lg-6">
+        <img src="./images/info02.png" class="img-fluid" style="max-width: 100%;">
+      </div>
+      <div class="col-lg-6 d-flex align-items-center">
+        <div class="card-body">
+          <h5 class="card-title fs-1">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content.
+            This content is a little bit longer.</p>
+          <a href="#" class="btn btn-success">VIEW STORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 地圖 -->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7036497990493!2d121.4173269156221!3d25.044129283967667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1656746830025!5m2!1szh-TW!2stw"
+    class="w-100 vh vh-lg" style="border:0;" allowfullscreen></iframe>
+
+  <!-- 表單 -->
+  <div class="container-fluid bg-gray">
+    <form class="row g-3 px-6 py-5 needs-validation" novalidate>
+      <div class="text-center">
+        <p class="fs-1">聯絡我們</p>
+        <p class="fs-3 m-0">泰山咖啡莊園，傳承熱情 coding 精神</p>
+        <p class="fs-7 fs-sm-7"> 任何服務問題或建議，歡迎您透過客服表單告知我們，謝謝！</p>
+      </div>
+      <div class="col-lg-6">
+        <label for="inputName" class="form-label">姓名</label>
+        <div class="input-group">
+          <input type="text" class="form-control is-valid" id="inputName" required>
+          <div class="input-group-text">
+            <label class="form-check-label me-1" for="gender1">
+              先生
+            </label>
+            <input class="form-check-input me-3" type="radio" name="gender" id="gender1" checked>
+            <label class="form-check-label me-1" for="gender2">
+              女士
+            </label>
+            <input class="form-check-input" type="radio" name="gender" id="gender2">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <label for="inputTel" class="form-label">電話</label>
+        <input type="tel" class="form-control" id="inputTel" required>
+      </div>
+      <div class="col-lg-6">
+        <label for="inputEmail" class="form-label">電子信箱</label>
+        <input type="email" class="form-control" id="inputEmail" required>
+      </div>
+      <div class="col-lg-6">
+        <label for="inputQuestion" class="form-label">問題類型</label>
+        <select id="inputQuestion" class="form-select">
+          <option selected>餐飲建議</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <label for="inputOpinion" class="form-label">意見需求</label>
+        <textarea class="form-control" id="inputOpinion" rows="5" required></textarea>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="subscribe">
+          <label class="form-check-label" for="subscribe">
+            訂閱泰山咖啡莊園最新資訊
+          </label>
+        </div>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-secondary">送出</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div class="container-fluid bg-black text-white">
+    <div class="row mx-md-5 px-md-5 pt-5">
+      <div class="col-6 col-xl-3 px-sm-5">
+        <img class="footer-img" src="./images/footer.png" alt="">
+      </div>
+      <div class="col-6 col-xl-3 px-sm-5 px-2">
+        <h5>Address</h5>
+        <p class="mb-0">1234 Street Name</p>
+        <p class="mb-0">City, AA 99999</p>
+      </div>
+      <div class="col-6 col-xl-3 px-sm-5">
+        <h5>Links</h5>
+        <p class="mb-0">Website builder</p>
+        <p class="mb-0">Downlosd for Windows</p>
+        <p class="mb-0">Downlosd for Mac</p>
+      </div>
+      <div class="col-6 col-xl-3 px-sm-5">
+        <h5>Contacts</h5>
+        <p class="mb-0">Email: support@mobirise.com</p>
+        <p class="mb-0">Phone: +1(0) 000 0000 001</p>
+        <p class="mb-0">Fax: +1(0) 000 0000 002</p>
+      </div>
+      <div class="col-12 mt-3 mb-3 text-center">
+        <p>&copy; Copyright 2022 Mudi0710 Change - All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
+</body>
+
+</html>
